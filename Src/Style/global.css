@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/* define variaveis CSS globais */
+:root{
+    /* Neutral */
+    --Black:#263238;
+    --D_grey:#4D4D4D;
+    --Grey:#717171;
+    --L_Grey:#89939E;
+    --Grey-Blue:#ABBED1;
+    --Silver:#F5F7FA;
+    --White: #ffffff;
+    /* Primary */
+    --Primary:#4CAF4F;
+    --Secundary:#263238;
+    --Info:#2194f3;
+    /* Color Shade */
+    --Shade1:#43A046;
+    --Shade2:#388E3B;
+    --Shade3:#237D31;
+    --Shade4:#1B5E1F;
+    --Shade:#103E13;
+    /* Color Tint */
+    --Tint1:#66BB69;
+    --Tint2:#81C784;
+    --Tint3:#A5D6A7;
+    --tint4:#C8E6C9;
+    --Tint5:#E8F5E9;
+    /* Action */
+    --Warning:#FBC02D;
+    --Error:#E53835;
+    --Success:#2E7D31;
+    /* Configuração de Fontes */
+    --font-family:"Inter";
+    --font-headline-1-size:64px;
+    --font-headline-2-size:36px;
+    --font-headline-weight:600;
+    --font-headline-4-size:20px;
+    --font-body2-height-regular:400;
+    --font-body3-size:14px;
+}
+a{
+    text-decoration:none ;
+}
