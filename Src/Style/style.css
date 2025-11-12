@@ -68,30 +68,32 @@ header{
     flex-direction: column;
     gap: 16px;
 }
-.content-hero h1{
-    font-size:var(--font-headline-1-size);
+
+.content-hero h1 {
+  font-size: var(--font-headline-1-size);
+  display: inline-block; /* Necessário para a animação de width funcionar */
+  overflow: hidden; /* Esconde o texto enquanto está sendo "digitado" */
+  white-space: nowrap; /* Evita quebras de linha */
+  border-right: 3px solid black; /* Simula o cursor de digitação */
+  width: 0; /* Inicia com o texto oculto */
+  animation: digitar 4s steps(30) 1s forwards; /* Efeito de digitação */
 }
+
+.content-hero h1::after {
+  content: ''; /* Criar o "cursor" piscando */
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  animation: piscar 0.8s step-end infinite; /* Efeito de piscar */
+}
+
 .content-hero span{
     color: var(--Primary);
 }
 .content-hero p{
     font-size: 14px;
     color: var(--Grey);
-}
-.btn-primary{
-    width: 89.55px ;
-    height:36.49px ;
-    font-size: 11.14px;
-    border-radius: 5px;
-    background-color: var(--Primary);
-    transition: ease 0.3s;
-    cursor: pointer;
-}
-.btn-primary:hover{
-    transform: scale(1.07);
-}
-.btn-primary a{
-    color: var(--White);
 }
 .our-clients{
     display: flex;
@@ -122,11 +124,15 @@ header{
     margin-top: 20px;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
 }
 .container-logo-clients img{
-    width: 50px;
+    width: 70px;
     height: auto;
+    transition: 0.5s ease;
+}
+.container-logo-clients img:hover{
+    transform: scale(1.10);
 }
 .manage{
     margin-top: 50px;
@@ -162,7 +168,7 @@ header{
 }
 .bloco{
     width: 20%;
-    height: 400px;
+    height: 340px;
     border: 1px solid var(--Silver);
     border-radius: 5px;
     box-shadow: 0px 0px 120px var(--Silver);
@@ -170,13 +176,92 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     padding: 20px;
+    transition: 0.3s ease;
+}
+.bloco:hover{
+    transform: scale(1.07);
 }
 .bloco img{
-    width: 90px;
+    width: 70px;
     height: auto;
 }
+.bloco h2{
+    font-size: 28px;
+}
 .bloco p{
-    font-size: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--Black);
+}
+.unseen{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.unseen img{
+    width: 500px;
+    height: auto;
+}
+.unseen-content{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.helping{
+    width: 100%;
+    height: 350px;
+    margin-top: 80px;
+    background-color: var(--Silver);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.helping-content{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.helping-content h2{
+    font-size: 50px;
+}
+.helping-content span{
+    color: var(--Primary);
+}
+.helping-content p{
+    text-align: left;
+}
+.container-helping{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.linha{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.helping-bloco{
+    display: flex;
+    gap: 20px;
+}
+.helping-bloco img{
+    width: 50px;
+    height: auto;
 }
