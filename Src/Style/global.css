@@ -47,3 +47,11 @@
 a{
     text-decoration:none ;
 }
+p{
+    color: var(--Grey);
+}
+h2{
+    color: var(--D_grey);
+    font-size: var(--font-headline-2-size);
+    font-weight: var(--font-headline-weight);
+}
