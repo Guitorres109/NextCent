@@ -42,7 +42,7 @@
     --font-headline-weight:600;
     --font-headline-4-size:20px;
     --font-body2-height-regular:400;
-    --font-body3-size:14px;
+    --font-body3-size:16px;
 }
 a{
     text-decoration:none ;
@@ -70,6 +70,29 @@ h2{
 .btn-primary a{
     color: var(--White);
     font-size: var(--font-body3-size)
+}
+.get-button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--Primary);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.get-button a{
+    color: var(--White);
+}
+.get-button img{
+    width: 17px;
+    height: auto;
+}
+.get-button:hover{
+    transform: translateX(10px);
 }
 .reveal {
   opacity: 0;
