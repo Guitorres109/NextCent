@@ -92,7 +92,7 @@ h2{
     height: auto;
 }
 .get-button:hover{
-    transform: translateX(10px);
+    transform: translateX(20px) scale(1.05);
 }
 .reveal {
   opacity: 0;

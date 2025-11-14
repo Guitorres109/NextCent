@@ -21,7 +21,7 @@ header{
     font-weight: var(--font-body2-height-regular);
     transition: 0.3s ease;
 }
-.nav-header ul li a:hover{
+.nav-header a:hover{
     color: var(--Primary);
     text-decoration: underline;
 }
@@ -184,7 +184,7 @@ header{
     transform: scale(1.07);
 }
 .bloco:hover img{
-    transform: translateY(-10px);
+    transform: translateY(-20px) scale(1.10);
 }
 .bloco img{
     width: 70px;
@@ -424,6 +424,7 @@ footer{
     justify-content: center;
     flex-direction: row;
     padding: 10px;
+    position: absolute;
 }
 .footer-content1{
     width: 40%;
@@ -474,7 +475,7 @@ footer{
     align-items: flex-start;
     flex-direction: column;
     gap: 25px;
-    width: 10%;
+    width: 15%;
     height: 75%;
 }
 .footer-email{
@@ -499,4 +500,9 @@ footer h5{
 footer a{
     color: var(--White);
     font-weight: 100;
+    transition: 0.3s ease;
+}
+footer a:hover{
+    transform: translateY(-5px);
+    text-decoration: underline;
 }
