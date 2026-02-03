@@ -10,3 +10,10 @@ const items = document.querySelectorAll('.reveal');
         }, { threshold: 0.5 });
 
         items.forEach(item => observer.observe(item));
+        
+const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });

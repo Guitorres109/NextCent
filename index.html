@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Src/Style/style.css">
+    <link rel="stylesheet" href="./Src/Style/responsividade.css">
     <link rel="stylesheet" href="./Src/Style/global.css">
     <link rel="icon" href="./Src/Assets/images/Iconsite.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
@@ -12,10 +13,19 @@
 </head>
 <body>
     <header>
-        <div class="logo-header">
-            <img src="./Src/Assets/images/Logo1.svg" alt="Logo NextCent">
+        <div class="container-header">
+            <div class="logo-header">
+                <img src="./Src/Assets/images/Logo1.svg" alt="Logo NextCent">
+            </div>
+            <!-- Botão menu (hambúrguer) -->
+            <div class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <nav class="nav-header">
+
+        <nav class="nav-header" id="navMenu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
@@ -33,12 +43,12 @@
     <main>
         <section class="content-hero-section">
             <div class="content-hero">
-                <h1>Lessons and insights <br><span>from 8 years</span></h1>
+                <h1>Lessons and insights <span>from 8 years</span></h1>
                 <p>Where to grow your business as a photographer: site or social media?</p>
                 <button class="get-button"><a href="#">Register</a><img src="Src/Assets/images/White-seta.svg" alt=""></button>
             </div>
             <div>
-                <img src="./Src/Assets/images/Illustration.svg" alt="Desenho ilustrativo de uma pessoa usando um computador">
+                <img class="content-hero-img" src="./Src/Assets/images/Illustration.svg" alt="Desenho ilustrativo de uma pessoa usando um computador">
             </div>
         </section>
         <section class="our-clients reveal">
@@ -82,14 +92,14 @@
         <section class="unseen reveal">
             <img src="Src/Assets/images/Frame 35.svg" alt="">
             <div class="unseen-content">
-                <h2>The unseen of spending three <br>years at Pixelgrade</h2>
+                <h2>The unseen of spending three years at Pixelgrade</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
                 <button class="get-button"><a href="#">Learn More</a><img id="seta" src="Src/Assets/images/White-seta.svg" alt=""></button>
             </div>
         </section>
         <section class="helping reveal">
             <div class="helping-content">
-                <h2>Helping a local <br><span>business reinvent itself</span></h2>
+                <h2>Helping a local <span>business reinvent itself</span></h2>
                 <p>We reached here with our hard work and dedication</p>
             </div>
             <div class="container-helping">
@@ -128,7 +138,7 @@
             </div>
         </section>
         <section class="unseen reveal" id="unseen2">
-            <img src="Src/Assets/images/pana.svg" alt="">
+            <img src="Src/Assets/images/pana.svg" alt="" id="panaimg">
             <div class="unseen-content">
                 <h2>How to design your site footer like <br> we did</h2>
                 <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
@@ -136,7 +146,7 @@
             </div>
         </section>
         <section class="tesla reveal">
-            <img src="./Src/Assets/images/image 9.svg" alt="">
+            <img id="teslaimg" src="./Src/Assets/images/image 9.svg" alt="">
             <div class="tesla-content">
                 <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
                 <h3>Tim Smith</h3>
